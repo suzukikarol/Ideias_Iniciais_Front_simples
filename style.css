@@ -1,9 +1,53 @@
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
-  width: 60%;
+  font-family: sans-serif;
+  width: 50%;
   display: flex;
   flex-direction: column;
+  background: aliceblue;
+  margin-left: 20%;
+  min-height: 100%;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.corpo-texto {
+  text-align: center;
+  margin-left: 20%;
+  background: antiquewhite;
+  padding: 10px;
+  width: 60%;
+  border-radius: 20px
+}
+
+ul.opcoes {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  background: antiquewhite;
+  padding: 11px;
+  border-radius: 12px;
+}
+
+li {
+  display: block;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #609bd0;
+  line-height: 38px;
 }
 
 footer {
+  margin-top: auto;
+  margin-left: 39%;
   font-family: monospace;
 }

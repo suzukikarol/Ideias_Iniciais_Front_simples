@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="login.css">
+    <link rel="text/javascript" href="login.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Simples</title>
 </head>
@@ -11,9 +13,27 @@
 <body>
     <header>
         <a href="../index.html">Voltar</a>
-        <h2>Login Simples de HTML + CSS + JS</h2>
+        <h2 class="titulo">Login Simples de HTML + CSS + JS</h2>
     </header>
-    <form action="submit"></form>
+    <div class="login-body">
+        <div>
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login">
+        </div>
+        
+        <div>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password"
+                   minlength="8" required>
+        </div>
+        
+        <input type="submit" value="Sign in">
+    </div>
 </body>
+<footer>
+    <span class="footer">
+        © 2021 Karoline Suzuki Dev
+    </span>
+</footer>
 
 </html>

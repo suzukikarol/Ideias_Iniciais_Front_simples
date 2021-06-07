@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="formulario.css">
+    <script type="text/javascript" src="formulario.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formuláro Simples</title>
 </head>
@@ -11,9 +13,31 @@
 <body>
     <header>
         <a href="../index.html">Voltar</a>
-        <h2>Formuláro Simples de HTML + CSS + JS</h2>
+        <h2 class="titulo">Formuláro Simples de HTML + CSS + JS</h2>
+        <p>Para ver melhor como está o código, clique com o  botão direito do mouse, opção "inspecionar"</p>
     </header>
-    <form action="submit"></form>
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" />
+        </div>
+        <div>
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg"></textarea>
+        </div>
+        <div class="button">
+            <button click="alerta($event)">Enviar sua mensagem</button>
+        </div>
+    </form>
 </body>
 
+<footer>
+    <span class="footer">
+        © 2021 Karoline Suzuki Dev
+    </span>
+</footer>
 </html>
