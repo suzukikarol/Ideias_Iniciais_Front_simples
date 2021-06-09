@@ -12,26 +12,71 @@
 
 <body>
     <header>
-        <a href="../index.html">Voltar</a>
-        <h2 class="titulo">Formuláro Simples de HTML + CSS + JS</h2>
-        <p>Para ver melhor como está o código, clique com o  botão direito do mouse, opção "inspecionar"</p>
+        <a class="voltar" href="../index.html">Voltar</a>
+        <h2 class="titulo">Formuláro Simples de HTML + CSS</h2>
+        <p>Para ver melhor como está o código, clique com o botão direito do mouse, opção "inspecionar"</p>
+        <p>Lembrando que este é um exemplo simples e sem a funcionalidade de envio, apenas para ter uma idéia de
+            formulário, tags usadas e estilos aplicados</p>
+        <p>Como uma melhoria futura, colocarei alguma função usando JS.</p>
     </header>
+    <h2 id="titulo">Formulário simples de cadastro</h2>
     <form>
-        <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" />
+        <!-- usamos fieldset para agrupar a informação referente ao nome -->
+        <fieldset class="grupo">
+            <div class="campo">
+                <!-- o for na tag label serve para mostrar a qual campo ele corresponde -->
+                <label for="nome">
+                    <strong>Nome</strong>
+                </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <!-- o required é quando o campo não pode ser enviado vazio -->
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
         </div>
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" />
+
+        <div class="campo">
+            <label><strong>Qual area mais se encaixa com seu perfil?</strong></label>
+            <label>
+                <input type="radio" name="frontend" id="frontend" checked>Front End
+            </label>
+            <label>
+                <input type="radio" name="backend" id="backend" value="backend">Back End
+            </label>
         </div>
-        <div>
-            <label for="msg">Mensagem:</label>
-            <textarea id="msg"></textarea>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade: </strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option value="jr">Junior</option>
+                <option value="pl">Pleno</option>
+                <option value="sr">Sênior</option>
+            </select>
         </div>
-        <div class="button">
-            <button click="alerta($event)">Enviar sua mensagem</button>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Selecione as tecnologias que mais utiliza:</strong></label>
+                <input type="checkbox" name="tecnologia1" id="html">HTML
+                <input type="checkbox" name="tecnologia2" id="css">CSS
+                <input type="checkbox" name="tecnologia3" id="JS">Javascript
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>Conte um pouco da sua XP: </strong></label>
+            <textarea row="6" style="width: 26em" id="experiencia" rows="10"></textarea>
         </div>
+
+        <button type="submit" class="botao">Concluído</button>
     </form>
 </body>
 
@@ -40,4 +85,5 @@
         © 2021 Karoline Suzuki Dev
     </span>
 </footer>
+
 </html>

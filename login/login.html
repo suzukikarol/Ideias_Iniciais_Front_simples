@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <a href="../index.html">Voltar</a>
+        <a class="voltar" href="../index.html">Voltar</a>
         <h2 class="titulo">Login Simples de HTML + CSS + JS</h2>
     </header>
     <div class="login-body">
@@ -20,13 +20,12 @@
             <label for="login">Login:</label>
             <input type="text" id="login" name="login">
         </div>
-        
-        <div>
+
+        <div class="div-password">
             <label for="pass">Password (8 characters minimum):</label>
-            <input type="password" id="pass" name="password"
-                   minlength="8" required>
+            <input type="password" id="pass" name="password" minlength="8" required>
         </div>
-        
+
         <input type="submit" value="Sign in">
     </div>
 </body>
