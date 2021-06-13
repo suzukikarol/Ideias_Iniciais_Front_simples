@@ -24,16 +24,27 @@ body {
   text-align: center;
 }
 
+.conteudo-login{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imagem {
+  background: bisque;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .login-body {
   background: antiquewhite;
   display: flex;
   flex-direction: column;
-  width: 43%;
-  height: 182px;
+  width: 44%;
+  height: 196px;
   text-align: center;
-  margin-left: 25%;
   border-radius: 7px;
-  padding-top: 12px;
+  padding-top: 37px;
   line-height: 40px;
 }
 
@@ -52,13 +63,16 @@ input {
 input[type="submit"] {
   margin-top: 1rem;
   width: 50%;
-  margin-left: 67px;
-  background: aquamarine;
+  margin-left: 79px;
+  background: #68ccaa;
   border-radius: 20px;
+  color: #FFFF;
+  font-weight: bold;
 }
 
 .div-password {
-  margin-top: 12px;
+  margin-top: 18px;
+  margin-left: 1px;
 }
 
 footer {

@@ -43,12 +43,14 @@
         </div>
 
         <div class="campo">
+            <!-- lembrando que o campo de radio , so ficará uma opção selecionada se os names forem iguais -->
+            <!-- caso necessário manter names diferentes, usar função para que tenha essa validação -->
             <label><strong>Qual area mais se encaixa com seu perfil?</strong></label>
             <label>
-                <input type="radio" name="frontend" id="frontend" checked>Front End
+                <input type="radio" name="area" id="frontend" value="frontend">Front End
             </label>
             <label>
-                <input type="radio" name="backend" id="backend" value="backend">Back End
+                <input type="radio" name="area" id="backend" value="backend">Back End
             </label>
         </div>
 
