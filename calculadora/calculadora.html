@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculadora.css">
+    <script src="./calculadora.js"></script>
+    <title>Calculadora Simples</title>
+</head>
+
+<body>
+    <header>
+        <a class="voltar" href="../index.html">Voltar</a>
+        <h2 class="titulo">Calculadora Simples</h2>
+        <p> Um exemplo simples de calculadora usando HTML + CSS + JS </p>
+    </header>
+    <div class="corpo-calculadora">
+		<header id="screen"></header>
+		<table>
+		
+      			<tbody>
+				<tr class="title">
+					<td onclick="clearScr()">AC</td>
+          				<td onclick="sendNum('*0.01')">%</td>
+          				<td onclick="sendNum('/')">/</td>
+				</tr>
+				<tr class="title">
+					<td onclick="sendNum('+')">+</td>
+					<td onclick="sendNum('-')">-</td>
+					<td onclick="sendNum('*')">x</td>
+				</tr>
+				<tr>
+			    		<td onclick="sendNum('7')">7</td>
+			    		<td onclick="sendNum('8')">8</td>
+			    		<td onclick="sendNum('9')">9</td>
+				</tr>
+				<tr>
+					<td onclick="sendNum('4')">4</td>
+					<td onclick="sendNum('5')">5</td>
+					<td onclick="sendNum('6')">6</td>
+				</tr>
+				<tr>
+      					<td onclick="sendNum('1')">1</td>
+					<td onclick="sendNum('2')">2</td>
+					<td onclick="sendNum('3')">3</td>
+				</tr>
+				<tr>
+      					<td onclick="sendNum('.')">.</td>
+					<td onclick="sendNum('0')">0</td>
+					<td onclick="equalTo()">=</td>
+				</tr>	
+			</tbody>
+		</table>
+	</div>
+</body>
+<footer>
+    <span class="footer">
+        © 2021 Karoline Suzuki Dev
+    </span>
+</footer>
+
+</html>
